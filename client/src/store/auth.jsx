@@ -31,7 +31,7 @@ export const AuthProvider = ({ children }) => {
     if(token)
     {
       try {
-        const response = await fetch("http://localhost:5000/api/auth/user",
+        const response = await fetch("https://mern-website-with-admin-panel.vercel.app/api/auth/user",
           {
             mehtod: "GET",
             headers:
@@ -58,7 +58,7 @@ export const AuthProvider = ({ children }) => {
   {
     try {
 
-      const response = await fetch("http://localhost:5000/api/data/service",{
+      const response = await fetch("https://mern-website-with-admin-panel.vercel.app/api/data/service",{
         method:"GET",
       }
       );
