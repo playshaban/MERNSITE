@@ -4,7 +4,7 @@ import { useAuth } from "../store/auth";
 import { toast } from 'react-toastify';
 const Registration = () => {
 
-    document.title = "SignUp | Davion";
+    document.title = "SignUp | MERN-SITE";
     const [user, setUser] = useState({
         username: "",
         email: "",

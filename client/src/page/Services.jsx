@@ -4,7 +4,7 @@ import "./Services.scss";
 const Services = () => {
     const { services } = useAuth();
     //console.log(services);
-    document.title = "Services | Davion";
+    document.title = "Services | MERN-SITE";
 
     return (
         <section className="main">

@@ -4,7 +4,7 @@ import "./Contact.scss";
 import { toast } from 'react-toastify';
 const Contact = () => {
 
-    document.title = "Contact | Davion";
+    document.title = "Contact | MERN-SITE";
 
 
     const [contact, setContact] = useState({

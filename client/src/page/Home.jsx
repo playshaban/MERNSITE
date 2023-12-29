@@ -3,17 +3,17 @@ import './Home.scss';
 const Home = () => {
 
 
-    document.title = "Home | Davion";
+    document.title = "Home | MERN-SITE";
     return (
         <section className="main">
             <h1 className="main-heading">Home</h1>
             <div className="twocols">
                 <div className="intro">
                     <p>The Fastest Freelancing Works</p>
-                    <h1>Welcome To DEVION</h1>
+                    <h1>Welcome To MERN-SITE</h1>
                     <p>Are you ready to take your business to the next level with cutting-edge
                         IT-Solutions ? No worries, we have got you converd ! <br />
-                        At Devion, we specialized in providing innovative IT services and solutions
+                        At MERN-SITE, we specialized in providing innovative IT services and solutions
                         tailored to meed your unique requirements.
                     </p>
                     <div className="btns">

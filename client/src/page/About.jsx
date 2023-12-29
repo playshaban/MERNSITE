@@ -1,13 +1,13 @@
 import { NavLink } from 'react-router-dom';
 const About=()=>
 {
-    document.title = "About | Davion";
+    document.title = "About | MERN-SITE";
     return(
         <section className="main">
             <h1 className="main-heading">About</h1>
             <div className="twocols">
                 <div className="intro">
-                    <p>Welcome To Davion</p>
+                    <p>Welcome To MERN-SITE</p>
                     <h1>Why Choose Us?</h1>
                     <p> <b>Expertise:</b>
                         Our team consist of experienced IT professionals who are passionate about

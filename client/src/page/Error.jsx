@@ -3,6 +3,7 @@ import "./Error.scss";
 
 const Error = ()=>
 {
+    document.title="Error | MERN-SITE";
     return(
         <section className="main">
             <div className="error-page">

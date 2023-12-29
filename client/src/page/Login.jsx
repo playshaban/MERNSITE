@@ -6,7 +6,7 @@ const Login = () => {
 
     const URL= "https://mern-website-with-admin-panel.vercel.app/api/auth/login";
     const navigate = useNavigate();
-    document.title = "Login | Davion";
+    document.title = "Login | MERN-SITE";
     const [user, setUser] = useState({
         email: "",
         password: ""
