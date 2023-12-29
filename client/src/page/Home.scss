@@ -1,0 +1,18 @@
+.intro 
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:20px;
+    width: 500px;
+    h1
+    {
+        color: var(--themecolor);
+        font-size: 42px;
+    }
+    p 
+    {
+        font-size: 18px;
+        word-spacing: 2px;
+    }
+}

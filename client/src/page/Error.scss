@@ -1,0 +1,22 @@
+.error-page
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.content 
+{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    h1
+    {
+        font-size: 18vw;
+        text-align: center;
+            color:var(--themecolor);
+    }
+}
