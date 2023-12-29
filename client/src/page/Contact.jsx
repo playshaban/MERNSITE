@@ -55,7 +55,7 @@ const Contact = () => {
     const handleContact = async (e) => {
         e.preventDefault();
         try {
-            const response = await fetch('http://localhost:5000/api/form/contact',
+            const response = await fetch('https://mern-website-with-admin-panel.vercel.app/api/form/contact',
                 {
                     method: "POST",
                     headers:
