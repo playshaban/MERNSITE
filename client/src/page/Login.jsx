@@ -4,7 +4,7 @@ import { useAuth } from "../store/auth";
 import { toast } from 'react-toastify';
 const Login = () => {
 
-    const URL= "http://localhost:5000/api/auth/login";
+    const URL= "https://mern-website-with-admin-panel.vercel.app/api/auth/login";
     const navigate = useNavigate();
     document.title = "Login | Davion";
     const [user, setUser] = useState({
