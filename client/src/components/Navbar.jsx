@@ -24,7 +24,7 @@ export const Navbar =()=>
         <header>
             <div className="container">
                 <div className="logo">
-                    <h1>DEVION</h1>
+                    <NavLink to="/"><h1>MERN SITE</h1></NavLink>
                 </div>
                 <div className="navBtn" onClick={changeNav}>
                     {
