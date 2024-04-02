@@ -57,7 +57,7 @@ const registerInd= async(req,res,next)=>
 
         const existingUser = await Ind.findOne({ $or: [{ email }, { phone }, { github }, { linkedin }] });
         if (existingUser) {
-            return res.status(400).json({ message: "User already exists. Please use a different mail/phone/github/linkedin ." });
+            return res.status(400).json({ message: "User already exists. <br></br>Please use a different mail/phone/github/linkedin ." });
         }
         
         // Generate unique userid
@@ -71,7 +71,7 @@ const registerInd= async(req,res,next)=>
         const newUser = new Ind({...req.body, userid,applyDate});
         await newUser.save();
 
-        await sendEmail(email,firstName , lastName , phone, github, linkedin, portfolio , userid , applyDate);
+       // await sendEmail(email,firstName , lastName , phone, github, linkedin, portfolio , userid , applyDate);
 
         res.status(201).json({ message: "Application Submitted Successfully.", user: newUser });
     }
