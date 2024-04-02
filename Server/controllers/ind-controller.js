@@ -63,7 +63,7 @@ const registerInd= async(req,res,next)=>
         // Generate unique userid
         const date = new Date();
         const yearMonth = `${date.getFullYear()}${(date.getMonth() + 1).toString().padStart(2, '0')}`;
-        const userid = `${yearMonth}${firstName[0]}${lastName[0]}${phone.slice(-4)}`.toUpperCase();
+        const userid = `${yearMonth}${phone.slice(-4)}${Math.floor(1000 + Math.random() * 9000)}`.toUpperCase();
 
         const applyDate = `${date.getDate()}/${(date.getMonth() + 1).toString().padStart(2, '0')}/${date.getFullYear()}`;
 
