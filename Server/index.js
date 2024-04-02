@@ -9,7 +9,7 @@ const errorMiddlewaere = require('./middlewares/error-middleware');
 
 
 const corsOptions= {
-    origin:"https://mernsite.vercel.app , https://indintern.in , http://localhost:3000",
+    origin:"https://mernsite.vercel.app , https://indintern.in",
     methods: "GET, POST, PUT , DELETE , PATCH ",
     credentials:true,
 }
