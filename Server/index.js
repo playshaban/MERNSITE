@@ -8,11 +8,12 @@ const errorMiddlewaere = require('./middlewares/error-middleware');
 
 
 
-const corsOptions= {
-    origin:"https://mernsite.vercel.app , https://www.indintern.in",
-    methods: "GET, POST, PUT , DELETE , PATCH ",
-    credentials:true,
-}
+const corsOptions = {
+    origin: ["https://mernsite.vercel.app", "https://www.indintern.in" , "https://indintern.in"],
+    methods: "GET, POST, PUT, DELETE, PATCH",
+    credentials: true
+};
+
 
 app.use(cors(corsOptions));
 
