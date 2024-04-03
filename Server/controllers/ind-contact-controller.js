@@ -1,11 +1,11 @@
-const Contact = require('../models/contact-model');
+const Contact = require('../models/ind-contact-model');
 
 const contactForm = async(req,res,next) =>
 {
     try
     {
-        const response = req.body;
-        await Contact.create(response);
+        const newMessage = new Contact(req.body);
+        await newMessage.save();
         return res.status(200).json({message : "Message Sent"});
     }
     catch(err)
@@ -13,7 +13,6 @@ const contactForm = async(req,res,next) =>
         const status = 500;
         const message = "Unble to send Message";
         const extraDetails ="Server side controller failure ";
-
         next({status,message,extraDetails});
     }
 }
