@@ -24,8 +24,8 @@ Linkedin: ${linkedin} \n
 Portfolio: ${portfolio} \n
 User Id : ${userid} \n
 Apply Date: ${applyDate} \n
-We have successfully received your application. We are currently dealing with a huge traffic and will respond to your application shortly.\n
-Thank you,
+We have successfully received your application.We will get back to you once we complete reviewing your profile.\n
+Thank you & best wishes,
 HR
 INDinten.in
     `;
@@ -71,7 +71,7 @@ const registerInd= async(req,res,next)=>
         const newUser = new Ind({...req.body, userid,applyDate});
         await newUser.save();
 
-       // await sendEmail(email,firstName , lastName , phone, github, linkedin, portfolio , userid , applyDate);
+        await sendEmail(email,firstName , lastName , phone, github, linkedin, portfolio , userid , applyDate);
 
         res.status(200).json({ message: "Application Submitted Successfully.", user: newUser });
     }
